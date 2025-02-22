@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="Panels" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         
+        <!--make stackPanel Top left-->
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="3">
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+        </StackPanel>
+        <WrapPanel Grid.Row="0" Grid.Column="1" Margin="3">
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" />
+        </WrapPanel>
     </Grid>
 </Window>
