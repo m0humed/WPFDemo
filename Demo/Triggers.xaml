@@ -6,20 +6,82 @@
         xmlns:local="clr-namespace:Demo"
         mc:Ignorable="d"
         Title="Triggers" Height="450" Width="800">
-    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Button Content="Button" >
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Red"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
+    <Grid>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+            <CheckBox Name="TColor" Content="Change Text Color">
+                <CheckBox.Style>
+                    <Style TargetType="CheckBox">
+                        <Setter Property="FontSize" Value="15" />
+                        <Setter Property="FontWeight" Value="Bold" />
+                        <Setter Property="BorderThickness" Value="3"/>
+                        <Setter Property="Margin" Value="3"/>
+                    </Style>
+                </CheckBox.Style>
+            </CheckBox>
+
+            <Button Content="Test" >
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="400"/>
+                        <Setter Property="Height" Value="100"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <!--Trigger is used to change the property of the
+                            control when the condition is true-->
+                        <Style.Triggers>
+                            <!--internal event--> 
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <!--<Setter Property="FontWeight" Value="Bold"/>-->
+                            </Trigger>
+                            <!--outternal event-->
+                            <DataTrigger Binding="{Binding IsChecked, ElementName=TColor}" Value="True">
+                                <Setter Property="Foreground" Value="Red"/>
+                            </DataTrigger>
+                      
+                        </Style.Triggers>
+                    
+                    
+                    
+                    
+                    </Style>
+                </Button.Style>
             
-        </Button>
+            </Button>
+       
 
+        </StackPanel>
 
-    </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock TextWrapping="Wrap" Text="Test EventTrigger" VerticalAlignment="Center">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="FontSize" Value="18"/>
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.300" 
+                                                             Storyboard.TargetProperty="FontSize" To="30"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.300" 
+                                                             Storyboard.TargetProperty="FontSize" To="18"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+        </StackPanel>
+    </Grid>
 </Window>

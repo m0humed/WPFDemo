@@ -31,4 +31,10 @@ public partial class MainWindow : Window
         this.Resources["Dynamic"] = new SolidColorBrush(Colors.Red);
 
     }
+
+    private void Button_Click_2(object sender, RoutedEventArgs e)
+    {
+        Triggers tr = new Triggers();
+        tr.Show();
+    }
 }

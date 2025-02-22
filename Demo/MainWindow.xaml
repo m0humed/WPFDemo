@@ -34,11 +34,11 @@
     <Grid>
         <!--Using static resource-->
         <!--<Button Style="{StaticResource Main}" Content="Hello" RenderTransformOrigin="0.506,0.478" Margin="78,127,574,198" />-->
-        
+
         <!--using dynamic resource-->
         <Button Background="{DynamicResource Dynamic}" Content="Hello" RenderTransformOrigin="0.506,0.478" Margin="78,127,574,198" />
         <Button Content="Blue" HorizontalAlignment="Left" Margin="504,114,0,0" VerticalAlignment="Top" Height="49" Width="90" Click="Button_Click">
-            <Button.Style>    
+            <Button.Style>
                 <!--BaseOn is used to inherit the style from another style-->
                 <!--customize style to this Button only-->
                 <Style BasedOn="{StaticResource Main}" TargetType="Button" >
@@ -51,6 +51,7 @@
 
         </Button>
         <Button Content="Red" Style="{StaticResource Main}"  HorizontalAlignment="Left" Margin="504,202,0,0" VerticalAlignment="Top" Height="46" Width="90" Click="Button_Click_1"/>
+        <Button Content="Open Trigger Window" HorizontalAlignment="Left" Margin="294,347,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
