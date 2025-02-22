@@ -61,6 +61,8 @@
                 </TransformGroup>
             </WrapPanel.RenderTransform>
             <Button Content="Open Trigger Window" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_2"/>
+            <Button Content="Open Panels Window" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_3"/>
+
         </WrapPanel>
 
     </Grid>

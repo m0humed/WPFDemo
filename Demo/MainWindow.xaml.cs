@@ -37,4 +37,10 @@ public partial class MainWindow : Window
         Triggers tr = new Triggers();
         tr.Show();
     }
+
+    private void Button_Click_3(object sender, RoutedEventArgs e)
+    {
+        Panels pl = new Panels();
+        pl.Show();
+    }
 }
