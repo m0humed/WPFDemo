@@ -41,8 +41,13 @@
             <Button Content="Button" Width="150" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
             <Button Content="Button" Width="150" HorizontalAlignment="Left" Canvas.Bottom="0" />
         </Canvas>
-        
-        
-        
+
+        <DockPanel Grid.Row="1" Grid.Column="1" Margin="3">
+            <Button Content="Button"   DockPanel.Dock="Top" Background="LightPink" />
+            <Button Content="Button" Height="200"   DockPanel.Dock="Left" Background="Chartreuse"/>
+            <Button Content="Button"   DockPanel.Dock="Bottom" Background="DarkCyan"/>
+            <Button Content="Button"   DockPanel.Dock="Right" Background="Black" />
+            <Button Content="Button"   DockPanel.Dock="Top"  Background="Aqua"/>
+        </DockPanel>
     </Grid>
 </Window>
