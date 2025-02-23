@@ -24,6 +24,7 @@
             <Button Content="Button" Width="150" HorizontalAlignment="Left" />
             <Button Content="Button" Width="150" HorizontalAlignment="Left" />
         </StackPanel>
+        
         <WrapPanel Grid.Row="0" Grid.Column="1" Margin="3">
             <Button Content="Button" Width="150" HorizontalAlignment="Left" />
             <Button Content="Button" Width="150" HorizontalAlignment="Left" />
@@ -31,5 +32,17 @@
             <Button Content="Button" Width="150" HorizontalAlignment="Left" />
             <Button Content="Button" Width="150" HorizontalAlignment="Left" />
         </WrapPanel>
+
+
+        <Canvas Grid.Row="1" Grid.Column="0" Margin="3">
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" Canvas.Top="70" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" Canvas.Left="150" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" Canvas.Right="90" Canvas.Bottom="70"  />
+            <Button Content="Button" Width="150" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+            <Button Content="Button" Width="150" HorizontalAlignment="Left" Canvas.Bottom="0" />
+        </Canvas>
+        
+        
+        
     </Grid>
 </Window>
