@@ -7,6 +7,87 @@
         mc:Ignorable="d"
         Title="Binding" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <WrapPanel Grid.Column="0" Grid.Row="0" >
+            <TextBlock Text="One Time " FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+            <Slider Name="slider0" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <TextBox Name="txt0" Text="{Binding ElementName=slider0 ,Path=Value , Mode=OneTime}">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="BorderThickness" Value="3"/>
+                        <Setter Property="Margin" Value="3"/>
+                        <Setter Property="Width" Value="200"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="Margin" Value="15"/>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </WrapPanel>
+        <WrapPanel Grid.Column="0" Grid.Row="1" >
+            <TextBlock Text="One Way" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+            <Slider Name="slider1" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <TextBox Name="txt1" Text="{Binding ElementName=slider1 ,Path=Value , Mode=OneWay}">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="BorderThickness" Value="3"/>
+                        <Setter Property="Margin" Value="3"/>
+                        <Setter Property="Width" Value="200"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="Margin" Value="15"/>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="0" >
+            <TextBlock Text="Two Way" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+            <Slider Name="slider2" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <TextBox Name="txt2" Text="{Binding ElementName=slider2 ,Path=Value , Mode=TwoWay}">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="BorderThickness" Value="3"/>
+                        <Setter Property="Margin" Value="3"/>
+                        <Setter Property="Width" Value="200"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="Margin" Value="15"/>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="1" >
+            <TextBlock Text="OneWayToSource" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+            <Slider Name="slider3" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <TextBox Name="txt3"  Text="{Binding ElementName=slider3 ,Path=Value , Mode=OneWayToSource}">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="BorderThickness" Value="3"/>
+                        <Setter Property="Margin" Value="3"/>
+                        <Setter Property="Width" Value="200"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="Margin" Value="15"/>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </WrapPanel>
     </Grid>
 </Window>

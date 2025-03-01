@@ -49,4 +49,10 @@ public partial class MainWindow : Window
         CustomProps cp = new CustomProps();
         cp.Show();
     }
+
+    private void Button_Click_5(object sender, RoutedEventArgs e)
+    {
+        Binding b = new Binding();
+        b.Show();
+    }
 }
