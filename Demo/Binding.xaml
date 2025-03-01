@@ -19,7 +19,7 @@
 
         <WrapPanel Grid.Column="0" Grid.Row="0" >
             <TextBlock Text="One Time " FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-            <Slider Name="slider0" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <Slider Name="slider0" IsSnapToTickEnabled="True" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
             <TextBox Name="txt0" Text="{Binding ElementName=slider0 ,Path=Value , Mode=OneTime}">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
@@ -37,7 +37,7 @@
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="1" >
             <TextBlock Text="One Way" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-            <Slider Name="slider1" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <Slider Name="slider1" IsSnapToTickEnabled="True" Maximum="100"  Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
             <TextBox Name="txt1" Text="{Binding ElementName=slider1 ,Path=Value , Mode=OneWay}">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
@@ -55,7 +55,7 @@
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="0" >
             <TextBlock Text="Two Way" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-            <Slider Name="slider2" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <Slider Name="slider2" IsSnapToTickEnabled="True" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
             <TextBox Name="txt2" Text="{Binding ElementName=slider2 ,Path=Value , Mode=TwoWay}">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
@@ -73,7 +73,7 @@
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="1" >
             <TextBlock Text="OneWayToSource" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-            <Slider Name="slider3" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <Slider Name="slider3" IsSnapToTickEnabled="True" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
             <TextBox Name="txt3"  Text="{Binding ElementName=slider3 ,Path=Value , Mode=OneWayToSource}">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
