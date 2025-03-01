@@ -19,7 +19,8 @@
 
         <WrapPanel Grid.Column="0" Grid.Row="0" >
             <TextBlock Text="One Time " FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-            <Slider Name="slider0" IsSnapToTickEnabled="True" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
+            <Slider Name="slider0" IsSnapToTickEnabled="True" Maximum="100" Minimum="-100"
+                    Width="400"  VerticalAlignment="Stretch" Value="77" />
             <TextBox Name="txt0" Text="{Binding ElementName=slider0 ,Path=Value , Mode=OneTime}">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
