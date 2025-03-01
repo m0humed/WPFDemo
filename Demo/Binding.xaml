@@ -56,7 +56,7 @@
         <WrapPanel Grid.Column="1" Grid.Row="0" >
             <TextBlock Text="Two Way" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
             <Slider Name="slider2" IsSnapToTickEnabled="True" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
-            <TextBox Name="txt2" Text="{Binding ElementName=slider2 ,Path=Value , Mode=TwoWay}">
+            <TextBox Name="txt2" Text="{Binding ElementName=slider2 ,Path=Value , Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
                         <Setter Property="FontSize" Value="20"/>
@@ -74,7 +74,7 @@
         <WrapPanel Grid.Column="1" Grid.Row="1" >
             <TextBlock Text="OneWayToSource" FontSize="20" FontWeight="Bold" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top"  />
             <Slider Name="slider3" IsSnapToTickEnabled="True" Maximum="100" Minimum="-100" Width="400"  VerticalAlignment="Stretch" />
-            <TextBox Name="txt3"  Text="{Binding ElementName=slider3 ,Path=Value , Mode=OneWayToSource}">
+            <TextBox Name="txt3"  Text="{Binding ElementName=slider3 ,Path=Value , Mode=OneWayToSource , UpdateSourceTrigger=PropertyChanged}">
                 <TextBox.Style>
                     <Style TargetType="TextBox">
                         <Setter Property="FontSize" Value="20"/>
