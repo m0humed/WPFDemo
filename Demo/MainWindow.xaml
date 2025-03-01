@@ -52,16 +52,10 @@
         </Button>
         <Button Content="Red" Style="{StaticResource Main}"  HorizontalAlignment="Left" Margin="504,202,0,0" VerticalAlignment="Top" Height="46" Width="90" Click="Button_Click_1"/>
         <WrapPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" RenderTransformOrigin="0.511,0.499" Height="97" Margin="0,0,0,13" Width="790" >
-            <WrapPanel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="0.969"/>
-                    <RotateTransform Angle="-1.067"/>
-                    <TranslateTransform Y="2.086"/>
-                </TransformGroup>
-            </WrapPanel.RenderTransform>
+
             <Button Content="Open Trigger Window" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_2"/>
             <Button Content="Open Panels Window" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_3"/>
+            <Button Content="Open Custom prop Window" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="Button_Click_4" />
 
         </WrapPanel>
 

@@ -25,15 +25,17 @@ namespace Demo
             InitializeComponent();
             DispatcherTimer timer = new DispatcherTimer(TimeSpan.FromSeconds(1),DispatcherPriority.Normal 
                 , delegate {
-                    int newValue = 0;
-                    if(Counter == int.MaxValue)
+                    int newValue = 10;
+                   if (Counter == int.MaxValue)
                         newValue = 0;
-                    else
-                        newValue = Counter + 1;
+                   else
+                        newValue = ++Counter;
+                   
                     SetValue(CounterProperty, newValue);
 
 
                 },Dispatcher);
+
         }
 
 

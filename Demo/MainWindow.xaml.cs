@@ -43,4 +43,10 @@ public partial class MainWindow : Window
         Panels pl = new Panels();
         pl.Show();
     }
+
+    private void Button_Click_4(object sender, RoutedEventArgs e)
+    {
+        CustomProps cp = new CustomProps();
+        cp.Show();
+    }
 }

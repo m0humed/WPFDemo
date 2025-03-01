@@ -11,6 +11,7 @@
         <!--Genaric style apply on all buttons in all windows-->
         <Style TargetType="Button">
             <Setter Property="Height" Value="70"/>
+            <!--<Setter Property="Padding" Value="90"/>-->
         </Style>
     </Application.Resources>
 </Application>
