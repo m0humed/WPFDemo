@@ -58,6 +58,7 @@
             <Button Content="Custom prop Window" HorizontalAlignment="Left"   Click="Button_Click_4" />
             <Button Content="Binding Window"    Click="Button_Click_5" />
             <Button Content="Template Window"    Click="Button_Click_6" />
+            <Button Content="Data Control Window"    Click="Button_Click_7" />
 
 
         </WrapPanel>

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Runtime.Serialization.DataContracts;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -60,5 +61,11 @@ public partial class MainWindow : Window
     {
         ControlTemplate ct = new ControlTemplate();
         ct.Show();
+    }
+
+    private void Button_Click_7(object sender, RoutedEventArgs e)
+    {
+        DataControl data = new DataControl();
+        data.Show();
     }
 }
