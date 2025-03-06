@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.ComponentModel;
 namespace Demo
 {
-    public class Car
+    public class Car:INotifyPropertyChanged
     {
         private string _model;
         private string _color;
@@ -16,19 +16,46 @@ namespace Demo
         public string Model
         {
             get { return _model; }
-            set { _model = value; }
+            set
+            {
+                if (value != null)
+                {
+                    if (_model != null)
+                        OnPropertyChanged("Model");
+                    _model = value;
+                  
+                }
+            }
         }
 
         public string Color
         {
             get { return _color; }
-            set { _color = value; }
+            set
+            {
+                if (value != null)
+                {
+                    if (_color != null)
+                        OnPropertyChanged("Color");
+                    _color = value;
+                   
+                }
+            }
         }
 
         public string Year
         {
             get { return _year; }
-            set { _year = value; }
+            set {
+                if (value != null)
+                {
+                    if (_year != null)
+                        OnPropertyChanged("Year");
+                    _year = value;
+                   
+                }
+            
+            }
         }
 
         public string FullDetails
@@ -37,6 +64,11 @@ namespace Demo
             set { FullDetsils = value; }
         }
 
+        private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
 
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }

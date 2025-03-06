@@ -22,6 +22,13 @@ namespace Demo
         public iNotify()
         {
             InitializeComponent();
+            Car c = new Car() { Model = "BMW" , 
+            Color = "Black"
+             ,Year = "2020"
+            };
+           
+            this.DataContext = c;
+
         }
     }
 }

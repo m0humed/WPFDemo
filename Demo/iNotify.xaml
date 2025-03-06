@@ -8,16 +8,16 @@
         Title="iNotify" Height="450" Width="800">
     <Canvas>
         <Label Content="Model"   Width="100" FontFamily="Arial Black" FontSize="20" Height="50" Canvas.Left="30" Canvas.Top="50" />
-        <TextBox Width="500" Height="30"  Canvas.Left="170" Canvas.Top="50" FontSize="20" FontFamily="Berlin Sans FB Demi"/>
+        <TextBox Width="500" Height="30" Text="{Binding Path=Model ,Mode=TwoWay}"  Canvas.Left="170" Canvas.Top="50" FontSize="20" FontFamily="Berlin Sans FB Demi"/>
 
         <Label Content="Color" FontFamily="Arial Black" FontSize="20" Height="50" Canvas.Left="30" Canvas.Top="100" />
-        <TextBox Width="500" Height="30"  Canvas.Left="170" Canvas.Top="100" FontSize="20" FontFamily="Berlin Sans FB Demi"/>
+        <TextBox Width="500" Height="30" Text="{Binding Path=Color ,Mode=TwoWay}"  Canvas.Left="170" Canvas.Top="100" FontSize="20" FontFamily="Berlin Sans FB Demi"/>
 
         <Label Content="Year" FontFamily="Arial Black" FontSize="20" Height="50" Canvas.Left="30" Canvas.Top="150" />
-        <TextBox Width="500" Height="30"  Canvas.Left="170" Canvas.Top="150" FontSize="20" FontFamily="Berlin Sans FB Demi"/>
+        <TextBox Width="500" Height="30" Text="{Binding Path=Year ,Mode=TwoWay}"  Canvas.Left="170" Canvas.Top="150" FontSize="20" FontFamily="Berlin Sans FB Demi"/>
 
         <Label Content="Full Details" FontFamily="Arial Black" FontSize="20" Height="50" Canvas.Left="30" Canvas.Top="200" />
-        <TextBox Width="500" Height="30"  Canvas.Left="170" Canvas.Top="200" FontSize="20" FontFamily="Berlin Sans FB Demi" />
+        <TextBox Width="500" Height="30" Text="{Binding Path=FullDetails ,Mode=TwoWay}" Canvas.Left="170" Canvas.Top="200" FontSize="20" FontFamily="Berlin Sans FB Demi" />
 
 
 
