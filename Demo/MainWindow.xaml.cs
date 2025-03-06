@@ -68,4 +68,16 @@ public partial class MainWindow : Window
         DataControl data = new DataControl();
         data.Show();
     }
+
+    private void Button_Click_8(object sender, RoutedEventArgs e)
+    {
+        _ٌRoutEvent re = new _ٌRoutEvent();
+        re.Show();
+    }
+
+    private void Button_Click_9(object sender, RoutedEventArgs e)
+    {
+        iNotify ino = new iNotify();
+        ino.Show();
+    }
 }

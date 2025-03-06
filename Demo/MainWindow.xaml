@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="469" Width="800">
     <!--
     use to define General properties for the control
      -->
@@ -51,7 +51,7 @@
 
         </Button>
         <Button Content="Red" Style="{StaticResource Main}"  HorizontalAlignment="Left" Margin="504,202,0,0" VerticalAlignment="Top" Height="46" Width="90" Click="Button_Click_1"/>
-        <WrapPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" RenderTransformOrigin="0.511,0.499" Height="129" Margin="10,0,0,2" Width="790" >
+        <WrapPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" RenderTransformOrigin="0.511,0.499"  Margin="10,0,0,2"  >
 
             <Button Content="Trigger Window" HorizontalAlignment="Left"   Click="Button_Click_2"/>
             <Button Content="Panels Window" HorizontalAlignment="Left"  Click="Button_Click_3"/>
@@ -59,6 +59,8 @@
             <Button Content="Binding Window"    Click="Button_Click_5" />
             <Button Content="Template Window"    Click="Button_Click_6" />
             <Button Content="Data Control Window"    Click="Button_Click_7" />
+            <Button Content="Route Event Window"    Click="Button_Click_8" />
+            <Button Content="INotification Window"    Click="Button_Click_9" />
 
 
         </WrapPanel>
